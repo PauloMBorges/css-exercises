@@ -1,0 +1,22 @@
+#number2 {
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#number4 {
+    background-color: hsl(120, 100%, 75%);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.odd {
+    background-color: hsl(355, 100%, 80%);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.odd.number3 {
+    font-size: 24px;
+}
+
+
+/* In comparasion to the solution, I could have reduced duplicated code (number3 and number4 font-size) by creating a adjust-font-size class.*/
