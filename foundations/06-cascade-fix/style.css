@@ -8,16 +8,19 @@ body {
   font-weight: 800;
 }
 
+.para {
+  font-size: 22px;
+}
+
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
-}
+/* I changed .para and .small-para order so that .small-para's font-size would be applied instead of getting 
+para's font-size (22px) */
 
-.confirm {
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +32,9 @@ body {
   font-size: 20px;
 }
 
-.child {
+/* I changed .confirm to #confirm-button (id selector) -> higher specificity */
+
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
@@ -40,3 +45,5 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+
+/* I added .text to .child so that it would have higher specificity than div.text */
